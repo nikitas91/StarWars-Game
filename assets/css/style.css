@@ -4,18 +4,23 @@ body {
     background-size: cover;
 }
 
+.game-area{
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.6);
+}
+
 .characters-container{
     margin-bottom: 15px;
 }
 
 .section-header{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
 }
 
 .character{
-    border: 1px solid green;
+    border: 2px solid green;
     border-radius: 6px;
     padding: 5px;
     display: inline-block;
@@ -27,14 +32,27 @@ body {
     border-color: black;
 }
 
+.character-section{
+    margin-top: 10px;
+}
+
+.command-section{
+    margin-top: 10px;
+}
+
+#game-messages{
+    margin-top: 10px;
+}
+
 .character-name{
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 500;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .character-health{
-    font-size: 16px;
+    font-size: 14px;
+    margin-top: 5px;
 }
 
 .character-image{
@@ -42,7 +60,6 @@ body {
     height: 150px;
 }
 
-.btn-header{
-    font-weight: 500;
-    font-size: 16px;
+.b-r{
+    border-right: 1px solid black;
 }

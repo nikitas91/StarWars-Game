@@ -16,57 +16,36 @@
 
 <body>
 
-    <nav class="navbar navbar-default">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="./index.html">Star Wars RPG</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#">Help</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
     <div class="container">
-        <div class="jumbotron">
+        <div class="game-area">
             <div class="row">
                 <div class="col-md-12">
                     <div class="characters-container text-center">
-                        <div id="characters-header" class="section-header">Select Your Character</div>
+                        <div id="characters-header" class="section-header"></div>
                         <div id="characters" class="characters-body"></div>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6">
-                    <div class="section-header">Your Character</div>
-                    <div id="player" class="text-center"></div>
+                    <div class="character-section text-center">
+                        <div class="section-header">Your Character</div>
+                        <div id="player"></div>
+                    </div>
                 </div>
                 <div class="col-md-6">
-                    <div class="section-header">Defender</div>
-                    <div id="defender" class="text-center"></div>
+                    <div class="character-section text-center">
+                        <div class="section-header">Defender</div>
+                        <div id="defender"></div>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="text-center">
+                    <div class="command-section text-center">
                         <button id="attack" class="btn btn-primary">Attack!</button>
+                        <button id="restart" class="btn btn-primary">Restart</button>
+                        <div id="game-messages"></div>
                     </div>
                 </div>
             </div>
