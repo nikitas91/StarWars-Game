@@ -1,0 +1,48 @@
+body {
+    background-image: url("../images/x-wing-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.characters-container{
+    margin-bottom: 15px;
+}
+
+.section-header{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.character{
+    border: 1px solid green;
+    border-radius: 6px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.enemy{
+    background-color: red;
+    border-color: black;
+}
+
+.character-name{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.character-health{
+    font-size: 16px;
+}
+
+.character-image{
+    width: 175px;
+    height: 150px;
+}
+
+.btn-header{
+    font-weight: 500;
+    font-size: 16px;
+}
