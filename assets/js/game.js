@@ -74,17 +74,11 @@ var starWarsGame = {
             this.renderCharacter(this.selectedDefender, "#defender", true);
         }
     },
-    renderCharacter: function(charObj, area, isEnemy){
-        if(area != "#characters"){
-            $(area).empty();
-        }
+    renderCharacter: function(charObj, area){
         var charDiv = $("<div class='character' data-character='" + charObj.name + "'>");
         var charName = $("<div class='character-name'>").text(charObj.name);
         var charImg = $("<img class='character-image'>").attr("src", charObj.char_img).attr("alt", charObj.name);
         var charHealth = $("<div class='character-health'>").text(charObj.hp);
-        if(isEnemy){
-            charDiv.addClass("enemy");
-        }
         charDiv.append(charName).append(charImg).append(charHealth);
         $(area).append(charDiv);
     },
@@ -123,11 +117,13 @@ $("#attack").on("click", function(){
             starWarsGame.renderMessage(attackMessage);
 
             if(starWarsGame.selectedDefender.hp > 0){
-                starWarsGame.renderCharacter(starWarsGame.selectedDefender, "#defender", true);
+                $("#defender").empty();
+                starWarsGame.renderCharacter(starWarsGame.selectedDefender, "#defender");
                 starWarsGame.selectedCharacter.hp -= starWarsGame.selectedDefender.cap;
                 var counterAttackMessage = starWarsGame.selectedDefender.name + " attacked you back for " + starWarsGame.selectedDefender.cap;
                 starWarsGame.renderMessage(counterAttackMessage);
-                starWarsGame.renderCharacter(starWarsGame.selectedCharacter, "#player", false);
+                $("#player").empty();
+                starWarsGame.renderCharacter(starWarsGame.selectedCharacter, "#player");
 
                 if(starWarsGame.selectedCharacter.hp <= 0){
                     starWarsGame.clearGameMessages();

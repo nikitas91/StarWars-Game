@@ -6,7 +6,8 @@ body {
 
 .game-area{
     margin-top: 15px;
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 6px;
 }
 
 .characters-container{
@@ -25,6 +26,12 @@ body {
     padding: 5px;
     display: inline-block;
     margin: 0 15px;
+    background-color: white;
+}
+
+#defender .character{
+    background-color: black;
+    color: white;
 }
 
 .enemy{
